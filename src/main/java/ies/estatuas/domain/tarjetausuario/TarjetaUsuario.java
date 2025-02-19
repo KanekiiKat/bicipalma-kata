@@ -1,6 +1,5 @@
 package ies.estatuas.domain.tarjetausuario;
 
-
 public class TarjetaUsuario {
 
     private final String id;
