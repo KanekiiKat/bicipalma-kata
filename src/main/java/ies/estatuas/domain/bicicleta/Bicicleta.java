@@ -1,14 +1,20 @@
 package ies.estatuas.domain.bicicleta;
 
-public class Bicicleta {
+public class Bicicleta implements Movil {
 
     private final int id;
 
-    public int getId() {
-        return id;
+    public Bicicleta(int id) {
+        this.id = id;
     }
 
-    public String toString() {
+    @Override
+    public int getId() {
+        return this.id;
+    }
 
+    @Override
+    public String toString() {
+        return Integer.toString(getId());
     }
 }
